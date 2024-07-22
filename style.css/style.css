@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+
+}
+.containor{
+    /* width: 100%; */
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+    /* grid-template-rows: repeat(7,1fr); */
+    grid-template-areas: 
+    "iphone iphone iphonetxt iphonetxt"
+    "iphone iphone iphonetxt iphonetxt"
+    "keyboard imac imactxt icloud"
+    "keyboard imac imactxt icloud"
+    "joystick tablet tablet icloud"
+    "joystick tablet tablet icloud"
+    "twitter ex tv tv" ;
+}
+
+
+.iphonetxt{
+    grid-area: iphonetxt;
+    display: flex;
+    width: 100%;
+    background-color: #F7F8F9;
+    text-align: center;
+     h2{
+        margin: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #9FA3A7 ;
+        font-family: "Montserrat", sans-serif;
+     }
+     h1{
+        margin: 20px;
+        font-size: 35px;
+        font-weight: 400;
+        color:  #333333;
+        font-family: "Arvo", serif;
+     }
+    a{
+        color:  #27B9C2;
+        font-size: 14px;
+        font-weight: 400;
+       
+    }
+    .iphonetxtcont{
+        justify-self: center;
+        align-self: center;
+
+    }
+ }
+ .iphonemain{
+    grid-area: iphone;
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    .iphonmaintxt{
+        align-self: center;
+        margin: 20px;
+        width: 45%;
+        text-align: left;
+        h2{
+            margin: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #9FA3A7 ;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 2px;
+         }
+         h1{
+            margin: 20px;
+            font-size: 22px;
+            font-weight: 400;
+            color:  #333333;
+            font-family: "Arvo", serif;
+          
+         }
+         p{
+            color: #9FA3A7;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 20px;
+            font-family: "Open Sans", sans-serif;
+         }
+    }
+    .iphonmainimg{
+        width: 45%;
+        margin: 30px;
+        margin-bottom: 0;
+        img{
+            width: 100%;
+            filter: drop-shadow( 0px 0px 0px #000a);
+        }
+    }
+
+ }
+
+    .keyboard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: keyboard;
+        width: 100%;
+        background-color: #F05638;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        .keycont{
+            text-align: center;
+            width: 90%;
+            img{
+            width: 100%;            
+
+            }
+            h2{
+        
+                font-size: 22px;
+                color:#FFFBFB;
+                font-weight: 700;
+                font-family: "Arvo", serif;
+            }
+            a{
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 700;
+                color:   #FFC80A;
+                font-family: "Open Sans", sans-serif;
+    
+            }
+        }
+    }
+
+    
+    .joystick{
+        grid-area: joystick;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        .joycon{
+            width: 90%;
+            justify-self: center;
+            align-self: center;
+            img{  width: 100%; }  
+        h2{
+            margin: 20px;
+            font-size: 22px;
+            color:  #333333;
+            font-weight: 700;
+            font-family: "Arvo", serif;
+        }
+        a{
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            color: #27B9C2  ;
+            font-family: "Open Sans", sans-serif;
+            margin: 20px;
+        }
+    }
+
+    }
+
+
+
+    .imac{
+        grid-area: imac;
+        width: 100%;
+        margin-bottom: 0;
+        .imacitem{
+            margin: 40px;
+            margin-bottom: 0;
+            width: 100%;
+            text-align: center;
+            h3{
+                margin: 20px;
+                color: #9FA3A7;
+                font-size: 12px;
+                font-weight: 700;
+                font-family: "Montserrat", sans-serif;
+                letter-spacing: 1px;
+            }
+            h2{
+                margin: 20px;
+                color: #333333;
+                font-size: 22px;
+                font-weight: 400;
+                font-family: "Arvo", serif;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            img{margin: 20px;
+                width: 80%;
+                margin-bottom: 0;}
+        }
+    }
+    .imactxt{
+        grid-area: imactxt;
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 0;
+        p{          
+            font-size: 14px;
+            font-weight: 400;
+            color:  #9FA3A7;
+            font-family: "Open Sans", sans-serif;
+            margin: 20px;
+            line-height: 2;
+            margin-bottom: 40px;}
+        a{  
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: 700;
+            color:      #27B9C2;
+            font-family: "Open Sans", sans-serif;
+            margin: 20px;}
+          }
+
+
+/************************************ section 3 end ******************************************/
+/*********************************** section 4 start *****************************************/
+
+
+        .twitter{
+            grid-area: twitter;
+            width: 100%;
+            background-color: #38D5F4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .circle{
+                text-align: center;
+                width: 90%;
+                height: 100%;
+                background-color:#35CFED ;
+                border-radius: 50%;
+                img{
+                    width: 20%;
+                    margin-top: 40px;
+                }
+                h2{
+                    color: #FFFFFF;
+                    font-size: 22px;
+                    font-weight: 400;
+                    font-family: "Arvo", serif;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
+
+            }
+        }
+        .tablet{
+            grid-area: tablet;
+        padding-top: 50px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        background-color: #93B6B7;
+        display: flex;
+        flex-direction: column;
+        .tablettxt{
+            width: 90%;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            h2{
+                justify-self: right;
+                margin-top: 50px;
+                color: #FFFFFF;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: "Arvo", serif;
+            }
+        }
+
+
+        .tabletimg{
+            justify-self: flex-end;
+            margin-top: 50px;
+            width: 100%;
+            background-image: url(../images/ux.png);
+            background-size: 80% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: auto;
+            img{
+                margin-top: 50px;
+                width: 90%;
+                margin-top: 20px;
+            }
+        }
+        .bestchoise{
+            background-color:#FA684F ;
+            position: absolute;
+            left:30px ;
+            top: 20px;
+            text-align: center;
+            border-radius: 3px;
+            h3{
+                font-size: 8px;
+                letter-spacing: 2px;
+                color: white;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+
+
+    }
+    .icloud{
+        grid-area: icloud;
+        width: 100%;
+        background-color: #8F76BC;
+        text-align: center;
+        .icloudcircle{
+            border-radius: 100%;
+            margin: auto;
+            width: 80%;
+            text-align: center;
+            background-color: #8166B0;
+            display: flex;
+            flex-direction: column;
+            
+            .icloudpopular{
+                border-radius: 40px;
+                width: 150px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                background-color: #8B72B6;
+                margin-top: 20px;
+                margin-bottom: 50px;
+                i{
+                    color: #FFC80A;
+                    margin: 5px;
+                }
+                h4{
+                    font-family: "Open Sans", sans-serif;
+                    margin: 5px;
+                    font-size: 10px;
+                    font-weight: 700;
+                    color: #FFFFFF;
+                }
+            }
+            .icloudimg{width: 60%;
+            margin: auto;}
+            img{
+                
+                width: 80%;
+                margin: auto;
+            }
+            h3{
+                color:  #FFFFFF;
+                margin: 30px;
+                font-family: "Montserrat", sans-serif;
+                letter-spacing: 2px;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+        .icloudtxt{
+            width: 80%;
+            margin: auto;
+            h2{
+                font-family: "Arvo", serif;
+                color: #FFFFFF;
+                font-size: 32px;
+                font-weight: 700;
+                margin: 30px;
+            }
+            p{
+                font-family: "Open Sans", sans-serif;
+                color: #FFFFFF;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            button{
+                padding: 15px;
+                margin: 40px;
+                color: #000000;
+                background-color: #FFC80A;
+                border-radius:40px;
+                border: none;
+                width: 150px;
+
+            }
+        }
+
+    }
+    .ex{
+        grid-area: ex;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .expopular{
+            border-radius: 40px;
+            width: 150px;
+            text-align: center;
+            margin: auto;
+            background-color: #7BC424;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            h4{
+                 font-family: "Open Sans", sans-serif;
+                margin: 5px;
+                font-size: 10px;
+                font-weight: 700;
+                color: #FFFFFF;}
+        }
+        .extxt{
+            width: 90%;
+            text-align: center;
+            font-family: "Arvo", serif;
+            color: #333333;
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    }
+.tvcont{
+    grid-area: tv;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tv{
+    height: 100%;
+    width: 100%;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .tvimg{
+        width: 50%;
+    img{ width: 50%;
+    }
+    
+          }
+          .tvtxt{
+            width: 40%;
+            h3{
+                font-family: "Arvo", serif;
+                color: #FFFFFF;
+                font-size: 22px;
+                font-weight: 400;
+            }
+          }
+}
+}
+/************************************  ******************************************/
+
+
+
+
+
+@media screen and (max-width:800px){
+.containor{ grid-template-areas:
+"iphonetxt iphonetxt"
+"iphonetxt iphonetxt"
+"iphone iphone"
+"iphone iphone"
+"keyboard joystick"
+"keyboard joystick"
+"imac imactxt"
+"imac imactxt"
+"twitter icloud"
+"twitter icloud"
+"tablet icloud"
+"tablet icloud"
+"ex ex"
+"tv tv"
+"tv tv"
+}
+}
+
